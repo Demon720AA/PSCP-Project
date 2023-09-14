@@ -1,3 +1,3 @@
 # PSCP-Project
-Som AA New Itim\n
+Team : Som AA New Itim
 PSCP project for Python
