@@ -15,7 +15,7 @@ red = (255, 0, 0)
 green = (0, 255, 0)
 
 # load image
-background = pygame.image.load('graphics/background.jpg')
+background = pygame.image.load('graphics/background.jpg')    # Background
 
 def draw_bg():
     screen.blit(background, (0, 0))
@@ -24,7 +24,7 @@ def draw_bg():
 class Spaceship(pygame.sprite.Sprite):
     def __init__(self, x, y, health):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load('')
+        self.image = pygame.image.load('')    # play image
         self.rect = self.image.get_rect()
         self.rect.center = [x, y]
         self.health_start = health
