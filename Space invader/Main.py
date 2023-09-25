@@ -1,11 +1,13 @@
 import pygame, sys
+from player import Player
 
 class Game:
     def __init__(self):
-        pass
+        player_sprite = Player((300, 600))
+        self.player = pygame.sprite.GroupSingle(player_sprite)
 
     def run(self):
-        pass
+        self.player.drawn(screen)
         # update all sprite groups
         # draw all sprite groups
 
@@ -15,6 +17,7 @@ if __name__ == ''"__main__":
     screen_hight = 600
     screen = pygame.display.set_mode((screen_width, screen_hight))
     clock =pygame.time.Clock()
+    game = Game()
 
     while True:
         for event in pygame.event.get():
@@ -23,6 +26,7 @@ if __name__ == ''"__main__":
                 sys.exit()
 
         screen.fill((30, 30, 30))
+        game.run()
 
         pygame.display.flip()
         clock.tick(60)
