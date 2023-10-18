@@ -54,7 +54,7 @@ white = (255, 255, 255)
 
 
 #load image
-bg = pygame.image.load("img/bg.png")
+bg = pygame.image.load("graphics/bg.png")
 
 def draw_bg():
 	screen.blit(bg, (0, 0))
@@ -71,7 +71,7 @@ def draw_text(text, font, text_col, x, y):
 class Spaceship(pygame.sprite.Sprite):
 	def __init__(self, x, y, health):
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load("img/spaceship.png")
+		self.image = pygame.image.load("graphics/spaceship.png")
 		self.rect = self.image.get_rect()
 		self.rect.center = [x, y]
 		self.health_start = health
