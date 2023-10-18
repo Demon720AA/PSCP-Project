@@ -27,13 +27,13 @@ font40 = pygame.font.SysFont('Constantia', 40)
 
 
 #load sounds
-explosion_fx = pygame.mixer.Sound("img/explosion.wav")
+explosion_fx = pygame.mixer.Sound("graphics/explosion.wav")
 explosion_fx.set_volume(0.25)
 
-explosion2_fx = pygame.mixer.Sound("img/explosion2.wav")
+explosion2_fx = pygame.mixer.Sound("graphics/explosion2.wav")
 explosion2_fx.set_volume(0.25)
 
-laser_fx = pygame.mixer.Sound("img/laser.wav")
+laser_fx = pygame.mixer.Sound("graphics/laser.wav")
 laser_fx.set_volume(0.25)
 
 
