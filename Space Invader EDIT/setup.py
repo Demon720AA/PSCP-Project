@@ -125,7 +125,7 @@ class Spaceship(pygame.sprite.Sprite):
 class Bullets(pygame.sprite.Sprite):
 	def __init__(self, x, y):
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load("img/bullet.png")
+		self.image = pygame.image.load("graphics/bullet.png")
 		self.rect = self.image.get_rect()
 		self.rect.center = [x, y]
 
@@ -146,7 +146,7 @@ class Bullets(pygame.sprite.Sprite):
 class Aliens(pygame.sprite.Sprite):
 	def __init__(self, x, y):
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load("img/alien" + str(random.randint(1, 5)) + ".png")
+		self.image = pygame.image.load("graphics/alien" + str(random.randint(1, 5)) + ".png")
 		self.rect = self.image.get_rect()
 		self.rect.center = [x, y]
 		self.move_counter = 0
@@ -165,7 +165,7 @@ class Aliens(pygame.sprite.Sprite):
 class Alien_Bullets(pygame.sprite.Sprite):
 	def __init__(self, x, y):
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load("img/alien_bullet.png")
+		self.image = pygame.image.load("graphics/alien_bullet.png")
 		self.rect = self.image.get_rect()
 		self.rect.center = [x, y]
 
@@ -190,7 +190,7 @@ class Explosion(pygame.sprite.Sprite):
 		pygame.sprite.Sprite.__init__(self)
 		self.images = []
 		for num in range(1, 6):
-			img = pygame.image.load(f"img/exp{num}.png")
+			img = pygame.image.load(f"graphics/exp{num}.png")
 			if size == 1:
 				img = pygame.transform.scale(img, (20, 20))
 			if size == 2:
