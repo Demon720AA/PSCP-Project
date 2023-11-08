@@ -57,7 +57,9 @@ white = (255, 255, 255)
 bg = pygame.image.load("graphics/bg.png")
 
 def intro_bg():
-	mixer.music("graphics/bg sound in game1.mp3")
+	mixer.music.load("graphics/bg sound in game1.mp3")
+	mixer.music.play(-1)
+	
 def draw_bg():
 	screen.blit(bg, (0, 0))
 
@@ -316,4 +318,5 @@ while run:
 
 	pygame.display.update()
 
+intro_bg()
 pygame.quit()
